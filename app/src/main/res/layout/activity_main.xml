@@ -4,14 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.dreampany.fireapp.MainActivity">
+
+    <Button
+        android:id="@+id/btnLoginPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LoginPage" />
 
     <Button
         android:id="@+id/btn_value_add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLoginPage"
         android:gravity="center"
         android:text="Add Value To FireBase" />
+
+    <EditText
+        android:id="@+id/edt_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_value_add" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_value"
+        android:layout_marginTop="27dp" />
 
 
 </RelativeLayout>
